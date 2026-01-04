@@ -1,0 +1,16 @@
+# LaTeX temporary files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.lof
+*.lot
+
+# latexmk
+*.fdb_latexmk
+
+# SVG helper output (from \usepackage{svg})
+*_svg-inkscape/
