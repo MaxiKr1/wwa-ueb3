@@ -1,30 +1,20 @@
-LaTeX-Unterlagen
-<===============>
+# Übungsblatt 3 – Werkzeuge für das wissenschaftliche Arbeiten
 
-"In diesem Repository befinden sich die LaTeX-Unterlagen zum Modul."
+Dieses Repository enthält die Bearbeitung von **Übungsblatt 3**
+des Moduls *Werkzeuge für das wissenschaftliche Arbeiten* (WS 25/26).
 
-Inhalt
-<---->
+## Inhalt
+Der Inhalt entspricht dem Text der Aufgabe 2 des Moduls.  
+Es kann sinnvoll sein, sich die PDF zur Aufgabe 2 noch einmal anzusehen.
 
-Der Inhalt entspricht dem Text der Aufgabe 2 des Moduls.
+## Aufbau des Repositories
+- `task/` – Aufgabenstellung als LaTeX und PDF
+- `diagram/` – Diagramm-Quelldateien (SVG / drawio)
+- `code/` – Python-Dateien aus Aufgabe 2
 
-Es kann sinnvoll sein, sich die PDF zur Aufgabe 2 noch einmal
-anzusehen
+## PDF erstellen
+Die PDF kann mit dem Befehl `pdflatex task1.tex` erzeugt werden.
 
-
-PDF erstellen
-<----------->
-
-Das geht ganz schnell und einfach:
-
--> Zuerst installieren wir LaTeX (tug.org/texlive/)
--> Dann nutzen wir PDFLaTeX zum Erstellen des PDF
-	"pdflatex ./task.tex" (Das muessen wir mehrfach machen, damit die PDF auch fertig wird.)
--> Alternativ koennen wir auch einfach LaTeX Mk nutzen 
-	"latexmk -pdf ./task.tex"
-
-
-!!ACHTUNG!!
-
-LaTeX erstelle einige nervige Dateien (.aux, .log) diese muss man loeschen bevor
-man einen Commit mit seinen Aenderungen macht!
+## Hinweis
+LaTeX erzeugt temporäre Dateien wie `.aux` oder `.log`.  
+Diese Dateien sollten **nicht** mit Git versioniert werden.
